@@ -1,0 +1,112 @@
+/*
+  SECTION 01: Global Styles
+*/
+
+/*
+  01a: Global
+*/
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+/*
+  01b: Typography
+*/
+
+html {
+  font-size: 100%;
+}
+
+html,
+body,
+input {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.h1 {
+  font-size: 3rem;
+}
+
+.h2 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.section-heading {
+  margin-bottom: 2rem;
+}
+
+/* ? Tags */
+
+body {
+  background-color: #f8f8f8;
+}
+
+/*
+  01c: General Components
+*/
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 100%;
+  max-width: 75rem;
+}
+
+/*
+
+  SECTION 02: Components
+
+*/
+
+/* * 02a: Header */
+
+.header {
+  position: sticky;
+  top: 0;
+
+  margin-block-end: 1rem;
+  padding-block-start: 1rem;
+  padding-block-end: 1rem;
+
+  border-bottom: 1px solid #eee;
+}
+
+.header__logo {
+  font-size: 0.875rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* * 02b: Listing */
+
+.listing {
+  padding: 1rem;
+
+  background-color: #fff;
+  border: 1px solid #eee;
+}
+
+.listing + .listing {
+  margin-top: 2rem;
+}
+
+.listing__header {
+  margin-bottom: 1rem;
+
+  border-bottom: 1px solid #eee;
+}
+
+.listing__details {
+  margin-bottom: 1rem;
+}

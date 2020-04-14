@@ -1,0 +1,10 @@
+{
+  "name": "django_project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "source": "source ~/Documents/Environments/django_project_env/bin/activate",
+    "start": "python manage.py runserver"
+  }
+}

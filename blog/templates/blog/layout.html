@@ -1,0 +1,49 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="{% static 'blog/reset.css' %}">
+  <link rel="stylesheet" href="{% static 'blog/style.css' %}">
+  {% if title %}
+    <title>Django Project | {{title}}</title>
+  {% else %}
+    <title>Django Project</title>
+  {% endif %}
+</head>
+<body>
+  <header class="header">
+    <section class="container">
+      <h1 class="header__logo">
+        Django Project
+      </h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="{% url 'blog-home' %}">Home</a>
+          </li>
+          <li>
+            <a href="{% url 'blog-about' %}">About</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+  <main class="content-wrapper" role="main">
+    <section class="main-content">
+      {% block content %}{% endblock %}
+    </section>
+    <aside class="sidebar-content">
+      <h2 class="h2">Sidebar</h2>
+    </aside>
+  </main>
+  <footer>
+    <section class="container">
+      Application Footer
+    </section>
+  </footer>
+</body>
+</html>

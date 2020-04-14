@@ -1,0 +1,21 @@
+{% extends 'blog/layout.html' %}
+{% block content %}
+  <section class="homepage__container container">
+    <h2 class="h2 section-heading">Articles</h2>
+      {% for post in posts %}
+        <article class="listing">
+          <header class="listing__header">
+            <h3 class="listing-header__title">{{ post.title}}</h3>
+          </header>
+          <div class="listing__details">
+            <p>By {{post.author}} on {{post.date_posted}}</p>
+          </div>
+          <div class="listing__content">
+            <p>
+              {{post.content }}
+            </p>
+          </div>
+        </article>
+      {% endfor %}
+  </section>
+{% endblock content %}
